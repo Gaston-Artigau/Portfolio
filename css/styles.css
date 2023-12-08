@@ -1,10 +1,15 @@
 :root {
-    --blanco: #ffffff;
+    --blanco: #DFE9F3;
     --oscuro: #212121;
-    --primario: #FFC107;
-    --secundario: #0097A7;
-    --gris: #757575;
-    --grisclaro: #DFE9F3;
+    --primario: #F8C42E;
+    --secundario: #4381C1;
+    --gris: #404041;
+    --grisclaro: #A7A9AC;
+    --otro: #CBCBCB;
+    --otro3: #515151;
+    --otro2: #656565;
+    --otro1: #2E2E2E;
+    --secundario1: #0097A7;
 }
 /* Globales.  ctrl k + c */
 html {
@@ -20,7 +25,8 @@ html {
 body {
     font-size: 16px; /* 1rem = 10px */
     font-family: 'Krub', sans-serif;
-    background-image: linear-gradient(to top, var(--grisclaro) 0%, var(--blanco) 100% );
+    background-image: linear-gradient(to top, var(--grisclaro) 0%, var(--blanco) 85% );
+    /* background-image: url(../img/font-page1.jpg); */
 }
 .contenedor {
     max-width: 120rem;
@@ -192,7 +198,7 @@ h1,h2,h3 {
 
 /* Contacto */
 .formulario {
-    background-color: var(--gris);
+    background-color: #515151;
     width: min(60rem, 100%);
     margin: 0 auto;
     padding: 2rem;
@@ -207,7 +213,7 @@ h1,h2,h3 {
     text-transform: uppercase;
     font-weight: bold;
     margin-bottom: 2rem;
-    color: var(--primario);
+    color: var(--blanco);
 }
 @media (min-width: 768px) {
     .contenedor-campos {
@@ -243,4 +249,93 @@ h1,h2,h3 {
 /* Footer */
 .footer {
     text-align: center;
+}
+
+
+/* Contacto.html */
+.font-nice {
+    background-image: none;
+    background-color: #DFE9F3;
+}
+
+.redes1 section {
+    display: block;
+    text-align: center;
+    color: var(--oscuro);
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+.h2 {
+    font-size: 7rem;
+}
+
+@media (min-width: 768px) {
+    .h2 {
+        font-size: 9rem;
+    }
+}
+
+.h3 {
+    font-size: 3rem;
+}
+
+.rsociales {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.rsociales svg:hover {
+    stroke: var(--otro2);
+}
+
+.nav-con {
+    display:flex;
+    flex-direction: column;
+}
+@media (min-width: 768px) {
+    .nav-con {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+/* sobremi.html */
+.h2sm {
+    font-size: 7rem;
+}
+@media (min-width: 768px) {
+    .h2sm {
+        font-size: 9rem;
+    }
+}
+
+.pf {
+    margin-top: 9rem;
+}
+
+.perfil p {
+    padding: 0 4rem 2rem 2rem;
+    font-size: 2rem;
+}
+
+.hab {
+    font-weight: normal;
+}
+
+.hab .rsociales {
+    display: flex;
+    align-items: center;
+}
+
+.re img {
+    height: 36px;
+    width: 36px;
+}
+
+.logo {
+    height: 7rem;
+    margin-left: 2rem;
 }
